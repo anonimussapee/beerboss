@@ -144,9 +144,13 @@ footer .footer--desc-container{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.footer--desc-container div{
+.footer--desc-container .logos_container{
     width: 90%;
     height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+.logos_container div{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -163,4 +167,10 @@ footer .footer--desc-container{
     width: 60px;
     height: 60px;
     background-image: url(../imgs/iconos/logobeer2.png);
+}
+.footer--desc-container .img_logo_jdx{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(https://jdx.netlify.app/imgs/iconos/logo_principla_2.png);
 }
