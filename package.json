@@ -1,0 +1,22 @@
+{
+  "name": "beerboss",
+  "version": "1.0.0",
+  "description": "landing de bossbeer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anonimussapee/beerboss.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "john cordova <librededrogas420@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anonimussapee/beerboss/issues"
+  },
+  "homepage": "https://github.com/anonimussapee/beerboss#readme"
+}

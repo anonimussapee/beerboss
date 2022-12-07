@@ -1,0 +1,166 @@
+:root{
+    --verde-malta:rgb(1, 99, 29);
+    --verde-shadow:rgb(34, 148, 26);
+    --verde-dark:#1b2618;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter',sans-serif ;
+    font-size: 62.5%;
+}
+header nav a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 2px 4px white;
+    padding-left: 10px;
+}
+header nav a:hover{
+color: white;
+text-shadow:var(--verde-shadow) 0px 4px 6px;
+}
+header{
+width: 100%;
+height: auto;
+}
+.header--nav{
+    text-align: right;
+    padding: 17px;
+}
+header nav{
+    background-color: var(--verde-malta);
+}
+.img{
+ background-position: center;
+background-repeat: no-repeat;
+background-size: cover;   
+}
+header a .img_logo{
+display:block;
+position: absolute;
+width: 60px;
+height: 60px;
+background-image: url(../imgs/iconos/logobeer2.png);
+}
+main{
+    background-color:var(--verde-dark) ;
+}
+.main--img-container {
+    width: 100%;
+    height: auto;
+}
+.main--img-container {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../imgs/fondos/beer_first.jpeg);
+}
+.main--title-container{
+    padding-top: 120px;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Nabla', cursive;
+}
+.main--advantage-container{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+.main--advantage-container .advantage--cards-container{
+    width: 90%;
+    max-width: 800px;
+    min-width: 288px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.advantage--cards-container .advantage-card{
+    padding: 10px;
+    width: 135px;
+    height: 135px;
+    text-align: center;
+    border-radius: 10px;
+    border: white 1px solid;
+}
+.advantage-card p{
+    padding-top: 5px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.advantage-card .advantage-img1 {
+    background-image: url(../imgs/iconos/star.png);
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.main--content-container{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.main--content-container .content--container-box{
+    width: 90%;
+    min-width: 288px;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+.main--content-container .content--container-box h1{
+    font-family: 'Cardo',sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    text-align: center;
+    color: goldenrod;
+}
+.main--content-container p{
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem ;
+    font-family: 'DM Sans';
+    color: white;
+}
+footer .footer--desc-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--verde-malta);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer--desc-container div{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.footer--desc-container a{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+.footer--desc-container .img_logo{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../imgs/iconos/logobeer2.png);
+}
