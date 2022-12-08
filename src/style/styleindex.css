@@ -117,6 +117,15 @@ main{
         color: white;
         font-family: 'Nabla', cursive;
     }  
+    header nav a{
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-decoration: none;
+        color: black;
+        text-shadow: 0px 2px 4px white;
+        padding-left: 10px;
+    }
 }
 @media (min-width:1000px) {
     .main--title-container{
@@ -149,10 +158,10 @@ main{
 .advantage--cards-container .advantage-card{
     padding: 10px;
     width: 135px;
-    height: 135px;
+    height: auto;
     text-align: center;
     border-radius: 10px;
-    border: white 1px solid;
+    border: white 3px groove;
 }
 .advantage-card p{
     padding-top: 5px;
@@ -183,7 +192,7 @@ main{
 }
 .main--content-container .content--container-box h1{
     font-family: 'Cardo',sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.2rem;
     text-align: center;
@@ -196,6 +205,7 @@ main{
     line-height: 1.4rem ;
     font-family: 'DM Sans';
     color: white;
+    text-align: center;
 }
 .main--presentaciones-container{
     width: 100%;
@@ -217,6 +227,7 @@ main{
     width: 280px;
     height: auto;
     padding: 10px;
+    position: relative;
     text-align: center;
 }
 .card-presentacion .presentacion1{
@@ -226,10 +237,101 @@ main{
     height: 200px;
     background-image: url(../imgs/fondos/artesanal1.jpeg);
 }
+.card-presentacion .presentacion2{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal2.jpeg);
+}
+.card-presentacion .presentacion3{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal3.jpeg);
+}
+.card-presentacion .presentacion4{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal4.jpg);
+}
+.card-presentacion .presentacion5{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal5.jpeg);
+}
+.card-presentacion .presentacion6{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal6.jpeg);
+}
+.card-presentacion .presentacion7{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal7.jpeg);
+}
+.card-presentacion .presentacion8{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal8.jpeg);
+}
+.card-presentacion .presentacion9{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal9.jpeg);
+}
+.card-presentacion .presentacion10{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal10.jpeg);
+}
+.card-presentacion .presentacion11{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+    background-image: url(../imgs/fondos/artesanal11.jpeg);
+}
 .presentacion--desc p{
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1.6rem;
     line-height: 1.8rem;
     font-family: 'Nabla', cursive;
+}
+.presentacion--desc .desc{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: 'Inter', cursive;
+    color: white;
+}
+.presentacion--desc .carrito{
+    padding-left: 60px;
+}
+.carrito input[type="number"], .carrito input[type="button"]{
+font-size: 1.2rem;
+padding: 3px;
+border-radius: 5px;
+}
+.carrito input[type="number"]{
+    width: 56px;
+    position: absolute;
+    left: calc(10% - 1px);
 }
 footer .footer--desc-container{
     width: 100%;
@@ -265,7 +367,6 @@ footer .footer--desc-container{
 }
 .footer--desc-container .img_logo_jdx{
     display:block;
-    margin-top: 5px;
     width: 60px;
     height: 60px;
     background-image: url(https://jdx.netlify.app/imgs/iconos/logo_principla_2.png);
