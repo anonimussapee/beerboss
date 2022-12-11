@@ -5,8 +5,35 @@ var view=`${ stock.map(prod=>` <article class="card-presentacion">
     <div class="presentacion--desc">
         <p>${prod.title}</p>
         <P class="desc">${prod.desc}</P>
-        <div class="carrito"><input type="number" id="rasp_cant"> <input type="button" value="añadir al carrito 🛒" id="agregar${prod.id}"></div>
+        <div class="carrito"><input type="number" id="cant${prod.id}"> <input type="button" value="añadir al carrito 🛒" id="agregar" onclick="addtocart(${prod.id})"></div>
         
     </div>
-</article>`).join(" ")}`;
+</article>`)}`;
 where.innerHTML=view;
+
+function addtocarthtml(){}
+var cart_ref=document.querySelector(".cant-cart");
+
+//estoy agregando un array vacio para añadir aqui los productos
+let carrito=[];
+//esta función agrega los productos 
+function addtocart(id){
+    //aqui obtenemos la cantidad de productos a agregar
+    var cant=document.querySelector(`#cant${id}`).value;
+    //con esta función mostramos solo en consola los datos obtenidos
+    console.log(id, Number(cant));
+    //aqui buscamos el producto que concuerda con el id
+    var item=stock.find(prod=>prod.id=id );
+    //agregamos la cantidad del producto al producto que enviaremos despues al carrito
+    item.cant=cant;
+    //aqui enviamos los datos al array vacio carrito
+   carrito.push(item);
+   //aqui mostramos en consola lo enviado
+   console.log(carrito);
+   cart_ref.innerHTML=carrito.length;
+}
+
+
+function collect_data(){
+    localStorage.setItem("carrito",)
+}
