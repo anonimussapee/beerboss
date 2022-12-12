@@ -15,21 +15,19 @@ where.innerHTML=view;
 //creando una variable en la que guardare el class de cartdata para pasarlos a html
 var carrito_html=document.querySelector(".cart--data");
 function addtocarthtml(product){
-//     let view=`${ product.map(prod=>` <article class="card-presentacion">
-//     <div style="background-image: url(${prod.img});" class="presentacion img" ></div>
-//     <div class="presentacion--desc">
-//         <p>${prod.title}</p>
-//         <div class="carrito"></div>
-        
-//     </div>
+    carrito_html.innerHTML="";
+product.forEach(prod=>carrito_html.innerHTML +=` <article class="card-presentacion cart">
+<div style="background-image: url(${prod.img});" class="presentacion cart img" ><span class="cant_cart">${prod.cant}</span></div>
+    <p class="title">${prod.title}</p><p class="precio_cart">$${prod.price}</p><span class="delete_this img" onclick="delete_this(${prod.id})"></span>
+</article>`);
+
+// let view=`${ product.map(prod=>` <article class="card-presentacion">
+// <div style="background-image: url(${prod.img});" class="presentacion img" ></div>
+// <div class="presentacion--desc">
+//     <p>${prod.title}</p>
+// </div>
 // </article>`)}`;
-let view=`${ product.map(prod=>` <article class="card-presentacion">
-<div style="background-image: url(${prod.img});" class="presentacion img" ></div>
-<div class="presentacion--desc">
-    <p>${prod.title}</p>
-</div>
-</article>`)}`;
-carrito_html.innerHTML =view;
+// carrito_html.innerHTML =view;
 }
 
 //en esta variable obtenemos la cantidad a comprar
