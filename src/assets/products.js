@@ -5,32 +5,54 @@ var view=`${ stock.map(prod=>` <article class="card-presentacion">
     <div class="presentacion--desc">
         <p>${prod.title}</p>
         <P class="desc">${prod.desc}</P>
-        <div class="carrito"><input type="number" id="cant${prod.id}"> <input type="button" value="añadir al carrito 🛒" id="agregar" onclick="addtocart(${prod.id})"></div>
+        <div class="carrito"><input placeholder="0" type="number" id="cant${prod.id}"> <input type="button" value="añadir al carrito 🛒" id="agregar" onclick="addtocart(${prod.id})"></div>
         
     </div>
 </article>`)}`;
 where.innerHTML=view;
 
-function addtocarthtml(){}
-var cart_ref=document.querySelector(".cant-cart");
 
+//creando una variable en la que guardare el class de cartdata para pasarlos a html
+var carrito_html=document.querySelector(".cart--data");
+function addtocarthtml(product){
+//     let view=`${ product.map(prod=>` <article class="card-presentacion">
+//     <div style="background-image: url(${prod.img});" class="presentacion img" ></div>
+//     <div class="presentacion--desc">
+//         <p>${prod.title}</p>
+//         <div class="carrito"></div>
+        
+//     </div>
+// </article>`)}`;
+let view=`${ product.map(prod=>` <article class="card-presentacion">
+<div style="background-image: url(${prod.img});" class="presentacion img" ></div>
+<div class="presentacion--desc">
+    <p>${prod.title}</p>
+</div>
+</article>`)}`;
+carrito_html.innerHTML =view;
+}
+
+//en esta variable obtenemos la cantidad a comprar
+var cart_ref=document.querySelector(".cant-cart");
 //estoy agregando un array vacio para añadir aqui los productos
 let carrito=[];
 //esta función agrega los productos 
-function addtocart(id){
+function addtocart(idd){
     //aqui obtenemos la cantidad de productos a agregar
-    var cant=document.querySelector(`#cant${id}`).value;
+    var cant=document.querySelector(`#cant${idd}`).value;
     //con esta función mostramos solo en consola los datos obtenidos
-    console.log(id, Number(cant));
+    console.log(idd, Number(cant));
     //aqui buscamos el producto que concuerda con el id
-    var item=stock.find(prod=>prod.id=id );
+    var item=stock.find((prod)=>{return prod.id==idd});
     //agregamos la cantidad del producto al producto que enviaremos despues al carrito
+    console.log(item);
     item.cant=cant;
     //aqui enviamos los datos al array vacio carrito
    carrito.push(item);
    //aqui mostramos en consola lo enviado
    console.log(carrito);
-   cart_ref.innerHTML=carrito.length;
+   cart_ref.innerHTML =carrito.length;
+   addtocarthtml(carrito);
 }
 
 
