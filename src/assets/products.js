@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded',function(){carrito=JSON.parse(localStorage.getItem('carrito'))||[]
-addtocarthtml();
+if(carrito.length==0){
+    carrito_html.innerHTML=`<p >todavía no tienes productos en tu carrito</p>`;
+}else{addtocarthtml();
+    var total=0;
+    for(let pro of carrito){
+     total+=pro.cant*pro.price;
+    }
+    total_ref.innerHTML=`Total : ${total}$`;}
+
 var cantidad_all=0;
    for(var car of carrito){
     cantidad_all +=car.cant;
@@ -12,7 +20,7 @@ var view=`${ stock.map(prod=>` <article class="card-presentacion">
     <div class="presentacion--desc">
         <p>${prod.title}</p>
         <P class="desc">${prod.desc}</P>
-        <div class="carrito"><input placeholder="0" type="number" id="cant${prod.id}"><input type="button" value="añadir al carrito 🛒" id="agregar" onclick="addtocart(${prod.id})"></div>
+        <div class="carrito"><input placeholder="1" type="number" id="cant${prod.id}"><input type="button" value="añadir al carrito 🛒" id="agregar" onclick="addtocart(${prod.id})"></div>
         
     </div>
 </article>`)}`;
@@ -22,7 +30,12 @@ function delete_this(idd){
     let item=carrito.find((prod)=>{return prod.id==idd});
     carrito.splice(carrito.indexOf(item),1);
     addtocarthtml(carrito);
-    collect_data();
+    if(carrito.length==0){
+        console.log("carrito vacio")
+        carrito_html.innerHTML=`<p >todavía no tienes productos en tu carrito</p>`;
+        collect_data();
+    }else{collect_data();}
+    
     var cantidad_all=0;
    for(var car of carrito){
     cantidad_all +=car.cant;
