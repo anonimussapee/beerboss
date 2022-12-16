@@ -434,7 +434,7 @@ border-radius: 5px;
 }
 .cart--data .card-presentacion.cart{
     display: grid;
-    grid-template-columns: 30% 40% 20% 10%;
+    grid-template-columns: 27% 30% 30% 13%;
     padding: 10px;
     position: relative;
     margin-bottom: 2px;
@@ -444,7 +444,7 @@ border-radius: 5px;
     font-size: 1rem;
     font-family: 'Cardo';
     color: black;
-    font-weight: 100;
+    font-weight: 100;height: auto;
 }
 .card-presentacion.cart .precio_cart{
     font-size: 1.6rem;
@@ -508,6 +508,24 @@ border-radius: 5px;
     border-radius: 10px;
     padding: 5px;
     font-size: 1.8rem;
+
+}
+@media (max-width:415px) {
+    .cart--popup .cart_op_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .cart_op_container .total{
+        background-color: rgba(255, 255, 255, 0.675);
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 1.6rem;
+    
+    }
 }
 footer .footer--desc-container{
     width: 100%;

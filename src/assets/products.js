@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){carrito=JSON.parse(localStorage.getItem('carrito'))||[]
+document.addEventListener('DOMContentLoaded',function(){carrito=JSON.parse(localStorage.getItem('carrito'))||[];
 if(carrito.length==0){
     carrito_html.innerHTML=`<p >todavía no tienes productos en tu carrito</p>`;
 }else{addtocarthtml();

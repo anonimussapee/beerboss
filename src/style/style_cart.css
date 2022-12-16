@@ -136,14 +136,41 @@ main{
     width: 100%;
     height: auto;
     position: relative;
+    padding-bottom: 10px;
 }
 .main--cart-container .cart--data-container{
     width: 90%;
     min-width: 288px;
-    max-width: 850px;
-    height: 80%;
+    max-width: 900px;
+    height: 350px;
     margin: 0 auto;
-
+    border-radius: 10px;
+    background-image: url(../imgs/fondos/cart_cover.jpeg);
+    border: rgba(255, 255, 255, 0.108) 2px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.cart--data-container .pre{
+    margin-top: 2px;
+}
+.cart--data-container h3{
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    padding-bottom: 10px;
+}
+.cart--data-container .data---cart{
+width: 100%;
+background-color: rgba(255, 255, 255, 0.381);
+font-size: 1rem;
+text-shadow: white 2px 2px 2px;
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+}
+.presentacion{
+    width: 50px;
+    height: 50px;
 }
 footer .footer--desc-container{
     width: 100%;
