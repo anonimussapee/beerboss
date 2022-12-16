@@ -1,0 +1,185 @@
+:root{
+    --verde-malta:rgb(1, 99, 29);
+    --verde-shadow:rgb(34, 148, 26);
+    --verde-dark:#1b2618;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter',sans-serif ;
+    font-size: 62.5%;
+}
+header nav a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 2px 4px white;
+    padding-left: 10px;
+}
+header nav a:hover{
+color: white;
+text-shadow:var(--verde-shadow) 0px 4px 6px;
+}
+header{
+width: 100%;
+height: auto;
+padding-bottom: 65px;
+}
+.header--nav{
+    text-align: right;
+    padding: 17px;
+    width: 100%;
+    background-color: var(--verde-malta);
+    position: fixed;
+    z-index: 3;
+}
+
+.img{
+ background-position: center;
+background-repeat: no-repeat;
+background-size: cover;   
+}
+header a .img_logo{
+display:block;
+position: absolute;
+width: 60px;
+height: 60px;
+left: calc(2%);
+top: 1px;
+background-image: url(../imgs/iconos/logobeer2.png);
+}
+main{
+    background-color:var(--verde-dark) ;
+}
+@media (min-width:760px) {
+    header nav a{
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-decoration: none;
+        color: black;
+        text-shadow: 0px 2px 4px white;
+        padding-left: 10px;
+    }
+}
+.main--form-container{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.127);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main--form-container .form--data-container{
+    width: 90%;
+    background-color: var(--verde-dark);
+    min-width: 288px;
+    max-width: 850px;
+    height: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: left;
+    color: white;
+    padding-bottom: 25px;
+    
+}
+.main--form-container .form--data-container form::-webkit-scrollbar{
+    display:none;
+}
+.form--data-container h3{
+    font-size: 1.3rem;
+    text-shadow:black 2px 2px 2px ;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.form--data-container form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(255, 255, 255, 0.086) .3px;
+    padding: 10px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+}
+.form--data-container form input{
+    font-size: .9rem;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form--data-container form input[type="file"]{
+    padding: 20px;
+    margin-top: 0;
+    display: inline-block;
+}
+.form--data-container input[type="button"]{
+    position: relative;
+    left: calc(50% - 45px);
+    font-size: 1.2rem;
+}
+.main--cart-container{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.main--cart-container .cart--data-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 850px;
+    height: 80%;
+    margin: 0 auto;
+
+}
+footer .footer--desc-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--verde-malta); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer--desc-container .logos_container{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.logos_container div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.footer--desc-container a{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+.footer--desc-container .img_logo{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../imgs/iconos/logobeer2.png);
+}
+.footer--desc-container .img_logo_jdx{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(https://jdx.netlify.app/imgs/iconos/logo_principla_2.png);
+}

@@ -1,0 +1,110 @@
+:root{
+    --verde-malta:rgb(1, 99, 29);
+    --verde-shadow:rgb(34, 148, 26);
+    --verde-dark:#1b2618;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter',sans-serif ;
+    font-size: 62.5%;
+}
+header nav a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 2px 4px white;
+    padding-left: 10px;
+}
+header nav a:hover{
+color: white;
+text-shadow:var(--verde-shadow) 0px 4px 6px;
+}
+header{
+width: 100%;
+height: auto;
+}
+.header--nav{
+    text-align: right;
+    padding: 17px;
+    width: 100%;
+    transition: .2s ease all;
+}
+.header_fixed{
+    position: fixed;
+    z-index: 4;
+    transition: .5s ease all;
+    background-color: var(--verde-malta);
+}
+.img{
+ background-position: center;
+background-repeat: no-repeat;
+background-size: cover;   
+}
+header a .img_logo{
+display:block;
+position: absolute;
+width: 60px;
+height: 60px;
+left: calc(2%);
+top: 1px;
+background-image: url(../imgs/iconos/logobeer2.png);
+}
+main{
+    background-color:var(--verde-dark) ;
+    padding: 20px;
+}
+@media (min-width:760px) {
+    header nav a{
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-decoration: none;
+        color: black;
+        text-shadow: 0px 2px 4px white;
+        padding-left: 10px;
+    }
+}
+footer .footer--desc-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--verde-malta); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer--desc-container .logos_container{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.logos_container div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.footer--desc-container a{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+.footer--desc-container .img_logo{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../imgs/iconos/logobeer2.png);
+}
+.footer--desc-container .img_logo_jdx{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image: url(https://jdx.netlify.app/imgs/iconos/logo_principla_2.png);
+}

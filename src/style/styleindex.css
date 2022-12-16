@@ -122,7 +122,7 @@ main{
     color: white;
 }
 .cart--popup input[type="button"]:hover{
-    font-size:1.5rem ;
+    font-size:1.9rem ;
 }
 .main--img-container .cart{
 width: 50px;
@@ -428,6 +428,10 @@ border-radius: 5px;
     top: 25px;
     background-image: url(../imgs/iconos/delete.png);
 }
+.delete_this:hover{
+    width: 35px;
+    height: 35px;
+}
 .cart--data .card-presentacion.cart{
     display: grid;
     grid-template-columns: 30% 40% 20% 10%;
@@ -485,6 +489,10 @@ border-radius: 5px;
         position: absolute;
         top: 25px;
         background-image: url(../imgs/iconos/delete.png);
+    }
+    .delete_this:hover{
+        width: 45px;
+        height: 45px;
     }
 }
 .cart--popup .cart_op_container{
