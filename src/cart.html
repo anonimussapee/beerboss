@@ -31,11 +31,15 @@
       <section class="main--cart-container">
         <div class="cart--data-container img">
           <h3>tus productos:</h3>
+          
             <article class="data---cart">
                 <p>Articulo</p><p>Cantidad</p><p>Precio </p><p>total</p>
             </article>
+          <div class="slider_cart">
             <p class="in__cart"></p>
-        </div>
+          </div>
+          <div class="total-container"><p class="continuar-btn" onclick=""> continuar</p><p class="total-all">total:0$</p></div>
+      </div>
       </section>
       <div class="main--form-container">
         <div class="form--data-container">
@@ -45,10 +49,9 @@
                 <label for="customer_direction">Dirección donde recibira el producto</label><input required type="text" id="customer_direction" name="customer_direction" placeholder="Quito,Valle de los chillos servientrega">
                 <label for="customer_email">Correo eletrónico</label><input required type="email" name="customer_email" id="customer_email" placeholder="customer@gmail.com">
                 <label for="customer_phone">Celular</label><input type="number" id="customer_phone" name="customer_phone" placeholder="0987654321">
-                <label for="customer_payment">arrastre la imagen que contenga el recibo de pago</label><input type="file" id="customer_payment" name="customer_payment">
                 <input type="reset" value="borrar todos los datos">
             </form>
-            <a href=""><input type="button" value="continuar"></a>
+            <input type="submit" class="hidden" value="continuar">
         </div>
       </div>
     </main>
