@@ -38,20 +38,21 @@
           <div class="slider_cart">
             <p class="in__cart"></p>
           </div>
-          <div class="total-container"><p class="continuar-btn" onclick=""> continuar</p><p class="total-all">total:0$</p></div>
+          <div class="total-container"><p class="continuar-btn" onclick=""> Compra por</p><p class="total-all">total:0$</p></div>
       </div>
       </section>
       <div class="main--form-container">
         <div class="form--data-container">
           <h3>Llena este formulario para terminar la compra</h3>
-            <form action="">
+            <form action="https://formsubmit.co/jdxevs@gmail.com" method="POST">
                 <label for="customer_name">Nombres y apellidos</label><input required type="text" placeholder="nombres completos" name="customer_name" id="customer_name">
                 <label for="customer_direction">Dirección donde recibira el producto</label><input required type="text" id="customer_direction" name="customer_direction" placeholder="Quito,Valle de los chillos servientrega">
                 <label for="customer_email">Correo eletrónico</label><input required type="email" name="customer_email" id="customer_email" placeholder="customer@gmail.com">
                 <label for="customer_phone">Celular</label><input type="number" id="customer_phone" name="customer_phone" placeholder="0987654321">
-                <input type="reset" value="borrar todos los datos">
+                <p id="data_cart"></p>
+                <input type="submit" value="Confirmar compra">
             </form>
-            <input type="submit" class="hidden" value="continuar">
+            
         </div>
       </div>
     </main>

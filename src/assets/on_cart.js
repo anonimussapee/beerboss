@@ -8,18 +8,22 @@ document.addEventListener('DOMContentLoaded',function(){
     for (let item of carrito) {
         total_all +=item.cant*item.price;
     }    
-    total.innerHTML=`total: $${total_all}`;
+    total.innerHTML=`total: $${total_all.toFixed(2)}`;
+    var carttxt;
+    carrito.forEach((item)=>{
+        carttxt +=`articulo:${item.title},cant:${item.cant}`
+    });
+    carttxt +=`total:${total_all.toFixed(2)}`
+    cart_data.innerHTML =` <input type="text" value="${carttxt}" class="data_cart" name="datos_cart">`;
 }else{
     total.innerHTML=`total: $0`;
 }
- 
+ console.log(carrito);
 });
 var in_car=document.querySelector(".in__cart")|| null;
 var total=document.querySelector(".total-all")|| null;
-
-let hidden_form=document.querySelector(".hidden");
-hidden_form.addEventListener('click', function(){
-let form=document.querySelector(".main--form-container");
-    form.classList.add("hidden");
-})
-    
+var cart_data=document.querySelector("#data_cart");
+  document.addEventListener("submit",function(){
+    carrito=[];
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+  });
