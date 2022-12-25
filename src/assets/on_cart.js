@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',function(){
         carttxt +=`articulo:${item.title},cant:${item.cant}`
     });
     carttxt +=`total:${total_all.toFixed(2)}`
-    cart_data.innerHTML =` <input type="text" value="${carttxt}" class="data_cart" name="datos_cart">`;
+    cart_data.innerHTML +=` <input type="text" value="${carttxt}" class="data_cart" name="datos_cart">`;
 }else{
     total.innerHTML=`total: $0`;
 }
