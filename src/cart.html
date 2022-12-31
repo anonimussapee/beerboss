@@ -9,6 +9,7 @@
     <title>Carrito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cardo&family=DM+Sans:ital,wght@1,500&family=Inter&family=Luckiest+Guy&family=Nabla&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style_cart.css">
+    <link rel="stylesheet" href="./style/style_base.css">
     <link rel="icon" href="./imgs/iconos/logobeer2.png">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH2H6652ND"></script>
@@ -19,12 +20,19 @@
 
   gtag('config', 'G-NH2H6652ND');
 </script>
+<script src="./assets/slider.js" defer></script>
 <script src="./assets/on_cart.js" defer></script>
 </head>
 <body>
     <header class="main--header-container ">
         
-        <nav class="header--nav"><a href="../index.html"><span class="img_logo img"></span></a> <a href="">Contactar</a><a href="">Acerca de</a></nav>
+        <nav class="header--nav"><a href="../index.html"><span class="img_logo img"><p>beerboss</p></span></a>  <a class="menu_op" href="#">Contactar</a><a class="menu_op" href="#">Acerca de
+        </a><span class="menu_burger img"></span></nav>
+        <div class="menu--burger-slider">
+          <span class="burger--close img"></span>
+          <a class="menu_opp" href="#">Contactar</a><a class="menu_opp" href="#">Acerca de
+          </a>
+      </div>
     </header>
     <main>
         
